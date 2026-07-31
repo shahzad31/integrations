@@ -1,4 +1,9 @@
 # newer versions go on top
+- version: "1.11.0"
+  changes:
+    - description: Add an optional `vault` connection config to the http, tcp, icmp and browser monitor streams so the agent (Heartbeat) can resolve ${vault/<path>#<field>} secret references from HashiCorp Vault at runtime.
+      type: enhancement
+      link: https://github.com/elastic/integrations/pull/20500
 - version: "1.10.0"
   changes:
     - description: Add policy tests for the http, tcp and icmp data streams verifying that default monitor fields are omitted from the compiled agent stream.

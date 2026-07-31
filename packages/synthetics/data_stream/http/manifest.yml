@@ -28,6 +28,13 @@ streams:
         multi: false
         required: false
         show_user: false
+      - name: vault
+        type: yaml
+        title: HashiCorp Vault connection
+        description: Connection used by the agent (Heartbeat) to resolve ${vault/<path>#<field>} secret references at runtime.
+        multi: false
+        required: false
+        show_user: false
       - name: enabled
         type: bool
         title: Whether the monitor is enabled
